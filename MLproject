@@ -1,9 +1,9 @@
 name: CNN Example
 docker_env:
-  image: 
+  image: sequential-cnn
 entry_points:
   main:
     parameters:
       batch_size: {type: int ,default: 32}
       epochs: {type: int, default: 10}
-    command: "python elasticnet.py"
+    command: "python SequentialCNN.py"
